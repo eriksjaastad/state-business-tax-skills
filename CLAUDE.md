@@ -16,6 +16,7 @@ skills/
     SKILL.md                       # Skill definition (frontmatter + content)
     references/
       rate-tables-2025-2026.md     # Rates, credits, thresholds with sources
+      city-bno.md                  # City overlay rates and filing info
 template/
   SKILL.md                         # Starter template for new state contributions
   references/
@@ -34,7 +35,14 @@ This project has higher standards than a typical repo. Every change must meet al
 - Never guess, estimate, or round tax numbers. If you can't verify it, don't include it
 - Use Decimal arithmetic in all calculation examples — never floats
 
-### Source Everything
+### Inline Citations — Every Number One Click From Its Source
+Citations are inline, not gathered at the bottom:
+- **Tables:** Add a `Source` column with a direct link to the official page for each rate
+- **Prose claims:** Use GitHub-flavored markdown footnotes (`[^1]`) with the source URL at the section bottom
+- **Formulas:** Footnote the first mention of each threshold or constant
+- The References section at the end of each SKILL.md is a **consolidated index**, not the primary citation — inline citations are
+
+### Source Quality
 - Every rate and rule links to an official government URL (state DOR, legislature, WAC/RCW)
 - Secondary sources (Tax Foundation, Grant Thornton, etc.) supplement but never replace official sources
 - If a source URL goes stale, flag it — don't silently remove the citation
@@ -80,7 +88,7 @@ docs: add Ohio CAT skill with 2026 rates
 ## File Conventions
 
 - Skill directories: `{two-letter-state-code}-{tax-abbreviation}` (e.g., `wa-bno-tax`, `oh-cat`, `tx-franchise-tax`)
-- Skill entry point: always `SKILL.md` with frontmatter (`name`, `description`)
+- Skill entry point: always `SKILL.md` with frontmatter (`name`, `description`, `last_verified`)
 - Reference docs go in `references/` subdirectory within the skill
 - Rate tables include effective dates and source URLs inline
 

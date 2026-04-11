@@ -6,17 +6,65 @@ State business taxes are wildly inconsistent across the US. Washington has a gro
 
 This project fills that gap. One skill per state, built to the [Agent Skills specification](https://agentskills.io/specification), with accurate rates, source citations, and calculator logic that Claude can apply during real financial work.
 
+**This provides general tax guidance based on publicly available information. It is not legal or tax advice. Consult a qualified tax professional for your specific situation.**
+
 ## Available Skills
 
-| State | Tax Type | Skill | Status |
-|-------|----------|-------|--------|
-| Washington | Business & Occupation (B&O) | [`wa-bno-tax`](skills/wa-bno-tax/) | Available |
-| Ohio | Commercial Activity Tax (CAT) | `oh-cat` | Planned |
-| Texas | Franchise Tax | `tx-franchise-tax` | Planned |
-| Nevada | Commerce Tax | `nv-commerce-tax` | Planned |
-| Oregon | Commercial Activity Tax (CAT) | `or-cat` | Planned |
-| Delaware | Gross Receipts Tax | `de-grt` | Planned |
-| Tennessee | Gross Receipts Tax | `tn-grt` | Planned |
+| State | Tax Type | Skill | Status | Last Verified |
+|-------|----------|-------|--------|---------------|
+| Washington | Business & Occupation (B&O) | [`wa-bno-tax`](skills/wa-bno-tax/) | Available | 2026-04-11 |
+| Ohio | Commercial Activity Tax (CAT) | `oh-cat` | Planned | — |
+| Texas | Franchise Tax | `tx-franchise-tax` | Planned | — |
+| Nevada | Commerce Tax | `nv-commerce-tax` | Planned | — |
+| Oregon | Commercial Activity Tax (CAT) | `or-cat` | Planned | — |
+| Delaware | Gross Receipts Tax | `de-grt` | Planned | — |
+| Tennessee | Gross Receipts Tax | `tn-grt` | Planned | — |
+
+## Planned City Coverage
+
+City-level business taxes are documented within each state's skill. Cities are covered in order of population.
+
+### Washington
+- [x] Seattle (Pop. ~750K) — city B&O
+- [x] Tacoma (Pop. ~220K) — city B&O
+- [x] Bellevue (Pop. ~150K) — city B&O
+- [ ] Kent (Pop. ~136K) — city B&O
+- [x] Everett (Pop. ~112K) — city B&O
+- [ ] Renton (Pop. ~107K) — city B&O
+- [ ] Federal Way (Pop. ~100K) — city B&O
+- [ ] Bellingham (Pop. ~95K) — city B&O
+- [ ] Kirkland (Pop. ~93K) — city B&O
+- [ ] Redmond (Pop. ~74K) — city B&O
+- [ ] Olympia (Pop. ~55K) — city B&O
+
+### Ohio
+- [ ] Columbus (Pop. ~900K)
+- [ ] Cleveland (Pop. ~370K)
+- [ ] Cincinnati (Pop. ~310K)
+
+### Texas
+- [ ] Houston (Pop. ~2.3M)
+- [ ] San Antonio (Pop. ~1.5M)
+- [ ] Dallas (Pop. ~1.3M)
+
+### Nevada
+- [ ] Las Vegas (Pop. ~650K)
+- [ ] Henderson (Pop. ~320K)
+- [ ] Reno (Pop. ~270K)
+
+### Oregon
+- [ ] Portland (Pop. ~640K)
+- [ ] Salem (Pop. ~180K)
+- [ ] Eugene (Pop. ~175K)
+
+### Delaware
+- [ ] Wilmington (Pop. ~70K)
+- [ ] Dover (Pop. ~40K)
+
+### Tennessee
+- [ ] Nashville (Pop. ~690K)
+- [ ] Memphis (Pop. ~630K)
+- [ ] Knoxville (Pop. ~190K)
 
 ## Installation
 
@@ -38,41 +86,34 @@ Claude Code discovers skills automatically from `~/.claude/skills/`. Once instal
 
 Every skill in this collection includes:
 
-- **Current tax rates** with tiered structures where applicable
+- **Current tax rates** with tiered structures where applicable, and inline source citations
 - **Small business credits and exemptions** with phase-out calculations
 - **Filing frequency rules** (monthly, quarterly, annual) and due dates
 - **Classification guidance** for common business types
-- **Calculation examples** with step-by-step math
-- **Source citations** linking to official state revenue department pages
+- **Nexus rules** for determining if you owe the tax
+- **City/local tax overlays** ordered by population
+- **Calculation examples** with step-by-step Decimal arithmetic
+- **Source citations** linking to official state revenue department pages — every number is one click from its official source
 - **Common mistakes** that trigger audits or penalties
 
 Skills are written in plain Markdown following the [Agent Skills spec](https://agentskills.io/specification). No dependencies, no runtime — just structured knowledge that Claude can reason with.
 
 ## Accuracy and Sources
 
-Every rate, threshold, and deadline in these skills is sourced from official state revenue department publications and current legislation. Source URLs are included in each skill file and its reference documents.
+Every rate, threshold, and deadline in these skills is sourced from official state revenue department publications and current legislation. Source URLs are included **inline** — as Source columns in tables and footnotes in prose — so you can verify any number in one click.
 
-Tax law changes frequently. Each skill includes the legislative session or effective date for its rates. If you find an outdated rate or threshold, please open an issue or PR.
+Tax law changes frequently. Each skill includes:
+- A `last_verified` date in the frontmatter showing when rates were last confirmed
+- Effective dates on every rate
+- Legislation references (bill numbers, statutes) for rates established by law
 
-**These skills provide tax guidance with source citations. They are not a substitute for professional tax advice.**
+If you find an outdated rate or threshold, please open an issue or PR. See the [changelog](CHANGELOG.md) for recent updates.
 
 ## Contributing
 
-We'd welcome contributions for any of the planned states — or states we haven't listed.
+We welcome contributions for any of the planned states — or states we haven't listed yet.
 
-### Adding a New State
-
-1. Copy `template/` to `skills/your-state-code/`
-2. Fill in the SKILL.md with your state's tax structure
-3. Add a reference document with rate tables and source URLs
-4. Test by installing the skill locally and asking Claude to compute a sample tax liability
-5. Open a PR
-
-See [`template/SKILL.md`](template/SKILL.md) for the expected structure.
-
-### Updating an Existing Skill
-
-If a state changes its rates or rules (they do, every session), update the skill and its reference doc. Include the bill number or effective date in your commit message.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for step-by-step instructions on adding a new state, updating an existing skill, or adding city overlays. Every PR that changes tax data must complete the verification checklist before merge.
 
 ## Structure
 
@@ -80,16 +121,17 @@ If a state changes its rates or rules (they do, every session), update the skill
 state-business-tax-skills/
   skills/
     wa-bno-tax/
-      SKILL.md                   # Main skill file
+      SKILL.md                          # Main skill file with inline citations
       references/
-        rate-tables-2025-2026.md # Detailed rate tables and sources
-    oh-cat/                      # (planned)
-    tx-franchise-tax/            # (planned)
+        rate-tables-2025-2026.md        # Detailed rate tables with sources
+        city-bno.md                     # City overlay rates and filing info
+    oh-cat/                             # (planned)
+    tx-franchise-tax/                   # (planned)
     ...
   template/
-    SKILL.md                     # Starter template for new states
+    SKILL.md                            # Starter template for new states
     references/
-      rate-tables.md             # Reference document template
+      rate-tables.md                    # Reference document template
 ```
 
 ## License
