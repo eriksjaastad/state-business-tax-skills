@@ -1,6 +1,12 @@
 # [State] [Tax Name] Rate Tables — [Year Range]
 
-## [Primary Classification Category] (Effective [Date])
+[Adapt the rate table structure to your state's tax type:]
+- **Gross receipts:** Rates by classification or income tier
+- **Margin-based:** Rates by entity type + margin calculation methods + compensation caps
+- **NAICS-based:** Rates by industry code
+- **Modified gross receipts:** Single rate + subtraction options
+
+## Rate Schedule (Effective [Date])
 
 | [Grouping Column] | Rate Code | Rate | Source |
 |---|---|---|---|
@@ -8,14 +14,14 @@
 
 > Legislation: [Bill/statute reference](https://example.gov/...)
 
-## Other Classifications
+## [Additional Rate Categories or Margin Methods]
 
-| Classification | Rate Code | Rate | Source |
+| [Column] | [Column] | Rate | Source |
 |---|---|---|---|
 | [Type A] | [code] | X.XXXXX | [State Revenue Dept](https://example.gov/...) |
 | [Type B] | [code] | X.XXXXX | [State Revenue Dept](https://example.gov/...) |
 
-Full list of classifications: [State Revenue Dept — Classifications](https://example.gov/...)
+Full list: [State Revenue Dept — Classifications/Rates](https://example.gov/...)
 
 ## Small Business Credit / Exemptions
 
