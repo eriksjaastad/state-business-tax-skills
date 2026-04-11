@@ -27,15 +27,18 @@ City-level business taxes are documented within each state's skill. Cities are c
 ### Washington
 - [x] Seattle (Pop. ~750K) — city B&O
 - [x] Tacoma (Pop. ~220K) — city B&O
+- [x] Spokane (Pop. ~230K) — no city B&O tax
 - [x] Bellevue (Pop. ~150K) — city B&O
-- [ ] Kent (Pop. ~136K) — city B&O
+- [ ] Kent (Pop. ~136K) — city B&O (partial — rates pending verification)
 - [x] Everett (Pop. ~112K) — city B&O
-- [ ] Renton (Pop. ~107K) — city B&O
-- [ ] Federal Way (Pop. ~100K) — city B&O
-- [ ] Bellingham (Pop. ~95K) — city B&O
-- [ ] Kirkland (Pop. ~93K) — city B&O
-- [ ] Redmond (Pop. ~74K) — city B&O
-- [ ] Olympia (Pop. ~55K) — city B&O
+- [ ] Renton (Pop. ~107K) — city B&O (rates pending verification)
+- [ ] Federal Way (Pop. ~100K) — B&O status pending
+- [ ] Bellingham (Pop. ~95K) — city B&O (rates pending verification)
+- [x] Kirkland (Pop. ~93K) — no city B&O tax
+- [x] Redmond (Pop. ~74K) — no city B&O tax
+- [x] Olympia (Pop. ~55K) — city B&O
+- [x] Burien (Pop. ~52K) — city B&O (0.2% flat)
+- [ ] Tukwila (Pop. ~22K) — city B&O (rates pending verification)
 
 ### Ohio
 - [x] Columbus (Pop. ~900K) — 2.50% municipal net profit tax
