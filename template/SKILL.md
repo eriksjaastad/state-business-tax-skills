@@ -23,12 +23,23 @@ last_verified: YYYY-MM-DD
 
 ## Rate Structure
 
-[Table of current rates by classification or income tier. Include effective dates and Source column.]
+[Table of current rates. Structure depends on the tax type:]
+
+**Gross receipts taxes** (WA B&O, OH CAT, DE GRT): rates by classification or income tier.
 
 | Classification | Rate | Effective | Source |
 |---|---|---|---|
 | [Type A] | X.XXX% | [Date] | [State Revenue Dept](https://example.gov/...) |
 | [Type B] | X.XXX% | [Date] | [State Revenue Dept](https://example.gov/...) |
+
+**Margin-based taxes** (TX Franchise): rates by entity type (standard, retail/wholesale, EZ).
+
+| Rate Type | Rate | Who Qualifies | Source |
+|---|---|---|---|
+| [Standard] | X.XX% | [Most entities] | [State Revenue Dept](https://example.gov/...) |
+| [Reduced] | X.XX% | [Qualifying entities] | [State Revenue Dept](https://example.gov/...) |
+
+**NAICS-based taxes** (NV Commerce): rates by industry code.
 
 [If rates are tiered, explain the tier structure and what determines which tier applies.]
 
@@ -38,7 +49,9 @@ last_verified: YYYY-MM-DD
 
 ## Credits and Exemptions
 
-[Small business credits, phase-out calculations, exemption thresholds. Include Source column in tables.]
+[Structure depends on the tax type:]
+
+**Gross receipts taxes with credits** (WA B&O): small business credits with phase-out formulas.
 
 | Filing Frequency | Credit Amount | Source |
 |---|---|---|
@@ -51,6 +64,10 @@ last_verified: YYYY-MM-DD
 ```
 [Pseudocode for credit calculation. Footnote each threshold with its source.]
 ```
+
+**Modified gross receipts taxes** (OR CAT): cost subtraction options instead of credits.
+
+**Margin-based taxes** (TX Franchise): multiple margin calculation methods — list each method, per-person caps, and EZ computation option. Also list exempt entity types.
 
 [^2]: [State Revenue Dept — Credit Tables](https://example.gov/...)
 
@@ -83,18 +100,24 @@ last_verified: YYYY-MM-DD
 
 ## Calculation Process
 
-### Step 1: Determine Classification
-### Step 2: Determine Rate
-### Step 3: Compute Gross Tax
-### Step 4: Apply Credits
-### Step 5: Net Tax Due
+[Adapt steps to the tax type. Common patterns:]
+
+**Gross receipts:** Classification → Rate → Gross Tax → Credits → Net Tax → City Taxes
+**Modified gross receipts:** Commercial Activity → Subtraction (cost inputs vs labor) → Taxable Amount → Tax → City Taxes
+**Margin-based:** Total Revenue → Threshold Check → Choose Margin Method (or EZ) → Apply Rate → Credits → Net Tax
+
+### Step 1: [Determine base amount]
+### Step 2: [Apply deductions/subtractions if applicable]
+### Step 3: [Compute tax]
+### Step 4: [Apply credits]
+### Step 5: [Net tax due]
 ### Step 6: Check for City/Local Taxes
 
 ## Example
 
 ```
 [Worked example with a realistic small business scenario. Use Decimal arithmetic.
-Show each step: gross receipts, classification, rate, gross tax, credit, net tax.]
+Show each step. For margin-based taxes, show all margin methods and identify the lowest.]
 ```
 
 ## Common Mistakes
@@ -124,6 +147,9 @@ When computing tax, present results as:
 ```markdown
 ## [State] [Tax Name] — [Period]
 
+[Adapt columns to the tax type. Examples:]
+
+Gross receipts:
 | Item | Amount |
 |---|---|
 | Gross Receipts | $XX,XXX.XX |
@@ -132,6 +158,16 @@ When computing tax, present results as:
 | Gross Tax | $XXX.XX |
 | Credits | ($XXX.XX) |
 | **Net Tax Due** | **$XXX.XX** |
+| Due Date | [date] |
+
+Margin-based:
+| Item | Amount |
+|---|---|
+| Total Revenue | $X,XXX,XXX.XX |
+| Margin Method Used | [method] |
+| Taxable Margin | $X,XXX,XXX.XX |
+| Rate | X.XX% |
+| **Net Tax Due** | **$XX,XXX.XX** |
 | Due Date | [date] |
 
 *City/Local Tax (if applicable):*
