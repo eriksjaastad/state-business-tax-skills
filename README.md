@@ -69,6 +69,12 @@ City-level business taxes are documented within each state's skill. Cities are c
 - [x] Memphis (Pop. ~630K) — state + city business tax via TN DOR
 - [x] Knoxville (Pop. ~190K) — state + city business tax via TN DOR
 
+## Request a State or City
+
+Don't see your state or city? [Open an issue](https://github.com/eriksjaastad/state-business-tax-skills/issues/new) and tell us which state or city business tax you need. We prioritize by demand — if people are asking for it, we'll build it.
+
+You can also contribute it yourself. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add a new state or city overlay.
+
 ## Installation
 
 Clone a specific skill into your Claude Code skills directory:
