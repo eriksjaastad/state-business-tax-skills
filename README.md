@@ -29,7 +29,7 @@ City-level business taxes are documented within each state's skill. Cities are c
 - [x] Tacoma (Pop. ~220K) — city B&O
 - [x] Spokane (Pop. ~230K) — no city B&O tax
 - [x] Bellevue (Pop. ~150K) — city B&O
-- [ ] Kent (Pop. ~136K) — city B&O (manufacturing 0.125% confirmed, other rates pending)
+- [x] Kent (Pop. ~136K) — city B&O (7 classifications, retailing 0.1%, service 0.2%, mfg 0.125%)
 - [x] Everett (Pop. ~112K) — city B&O
 - [x] Renton (Pop. ~107K) — city B&O (retailing 0.05%, others 0.085%, $500K threshold)
 - [x] Federal Way (Pop. ~100K) — no city B&O tax

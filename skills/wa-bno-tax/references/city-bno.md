@@ -207,11 +207,30 @@ The following cities in our planned list **do not impose a city B&O tax**:
 
 ---
 
-## Planned (Rates Not Yet Verified)
+## Kent (Pop. ~136,000)
 
-- Kent (Pop. ~136,000) — has B&O; manufacturing rate 0.125% confirmed per Ordinance 4503, other classification rates pending. [Kent City Taxes](https://www.kentwa.gov/pay-and-apply/file-city-taxes)
+| Classification | Rate | Source |
+|---|---|---|
+| Extracting | 0.200% | [KCC 3.28.050](https://www.codepublishing.com/WA/Kent/html/Kent03/Kent0328.html) |
+| Manufacturing | 0.125% (eff. Jan 1, 2025; was 0.100%) | [KCC 3.28.050 / Ord. 4503](https://www.codepublishing.com/WA/Kent/html/Kent03/Kent0328.html) |
+| Wholesaling | 0.200% | [KCC 3.28.050](https://www.codepublishing.com/WA/Kent/html/Kent03/Kent0328.html) |
+| Retailing | 0.100% | [KCC 3.28.050](https://www.codepublishing.com/WA/Kent/html/Kent03/Kent0328.html) |
+| Printing / Publishing / Extracting for hire / Processing for hire | 0.100% | [KCC 3.28.050](https://www.codepublishing.com/WA/Kent/html/Kent03/Kent0328.html) |
+| Retail Services | 0.200% | [KCC 3.28.050](https://www.codepublishing.com/WA/Kent/html/Kent03/Kent0328.html) |
+| Service & Other Activities | 0.200% | [KCC 3.28.050](https://www.codepublishing.com/WA/Kent/html/Kent03/Kent0328.html) |
 
-Plus approximately 40 additional cities. See [MRSC — City B&O Taxes](https://mrsc.org/explore-topics/business-regulation/licensing/business-and-occupation-taxes) for the full list.
+| Item | Detail | Source |
+|---|---|---|
+| Square footage tax | Also applies (larger of gross receipts or sq ft tax) | [KCC 3.28.050(B)](https://www.codepublishing.com/WA/Kent/html/Kent03/Kent0328.html) |
+| Filing URL | [kentwa.gov/pay-and-apply/file-city-taxes](https://www.kentwa.gov/pay-and-apply/file-city-taxes) | — |
+
+**Note:** Kent imposes both a gross receipts tax and a square footage tax. The amount due is the **larger** of the two.
+
+---
+
+## Remaining Cities
+
+Approximately 40 additional Washington cities impose B&O taxes beyond those documented above. See [MRSC — City B&O Taxes](https://mrsc.org/explore-topics/business-regulation/licensing/business-and-occupation-taxes) for the full list and [AWC B&O Tax Rates](https://wacities.org/news/2026/03/16/city-b-o-rates-and-licenses) for current rate tables.
 
 ---
 
@@ -239,3 +258,4 @@ Plus approximately 40 additional cities. See [MRSC — City B&O Taxes](https://m
 - [MRSC — Renton B&O Deviations from Model Ordinance (PDF)](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf)
 - [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf)
 - [Federal Way Business License](https://www.federalwaywa.gov/page/business-license)
+- [Kent Municipal Code 3.28 — B&O Tax](https://www.codepublishing.com/WA/Kent/html/Kent03/Kent0328.html)
