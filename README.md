@@ -16,7 +16,7 @@ This project fills that gap. One skill per state, built to the [Agent Skills spe
 | Ohio | Commercial Activity Tax (CAT) | `oh-cat` | Planned | — |
 | Texas | Franchise Tax | `tx-franchise-tax` | Planned | — |
 | Nevada | Commerce Tax | `nv-commerce-tax` | Planned | — |
-| Oregon | Commercial Activity Tax (CAT) | `or-cat` | Planned | — |
+| Oregon | Corporate Activity Tax (CAT) | [`or-cat`](skills/or-cat/) | Available | 2026-04-11 |
 | Delaware | Gross Receipts Tax | `de-grt` | Planned | — |
 | Tennessee | Gross Receipts Tax | `tn-grt` | Planned | — |
 
@@ -53,9 +53,9 @@ City-level business taxes are documented within each state's skill. Cities are c
 - [ ] Reno (Pop. ~270K)
 
 ### Oregon
-- [ ] Portland (Pop. ~640K)
-- [ ] Salem (Pop. ~180K)
-- [ ] Eugene (Pop. ~175K)
+- [x] Portland (Pop. ~640K) — city BLT + Multnomah MCBIT + Metro SHS (net income taxes)
+- [x] Salem (Pop. ~180K) — no city business tax
+- [x] Eugene (Pop. ~175K) — no city business tax
 
 ### Delaware
 - [ ] Wilmington (Pop. ~70K)
