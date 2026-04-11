@@ -48,14 +48,61 @@ Cities are listed by population (largest first).
 
 The following Ohio cities also impose municipal income taxes. For current rates, see [RITA Tax Rates Table](https://www.ritaohio.com/TaxRatesTable).
 
-- Toledo (Pop. ~270,000)
-- Akron (Pop. ~190,000)
-- Dayton (Pop. ~135,000)
-- Parma (Pop. ~80,000)
-- Canton (Pop. ~70,000)
-- Youngstown (Pop. ~60,000)
-
 Plus approximately 600 additional municipalities. The [RITA Tax Rates Table](https://www.ritaohio.com/TaxRatesTable) provides a comprehensive list.
+
+---
+
+## Toledo (Pop. ~270,000)
+
+| Item | Detail | Source |
+|---|---|---|
+| Rate | 2.50% of net profit | [Toledo Taxation](https://toledo.oh.gov/departments/finance/taxation) |
+| Effective | January 1, 2021 | [Toledo Taxation](https://toledo.oh.gov/departments/finance/taxation) |
+| Filing URL | [toledo.oh.gov/pay-taxes](https://toledo.oh.gov/pay-taxes) | — |
+
+---
+
+## Akron (Pop. ~190,000)
+
+| Item | Detail | Source |
+|---|---|---|
+| Rate | 2.50% of net profit | [Akron Income Tax](https://www.akronohio.gov/departments/finance/income_tax.php) |
+| Filing URL | [online.akronohio.gov](https://online.akronohio.gov/) | — |
+
+---
+
+## Dayton (Pop. ~135,000)
+
+| Item | Detail | Source |
+|---|---|---|
+| Rate | 2.50% of net profit (increased from 2.25%, effective Jan 1, 2025) | [Dayton Tax Information](https://www.daytonohio.gov/262/Tax-Information-Forms) |
+| Filing URL | [daytonohio.gov/262/Tax-Information-Forms](https://www.daytonohio.gov/262/Tax-Information-Forms) | — |
+
+---
+
+## Parma (Pop. ~80,000)
+
+| Item | Detail | Source |
+|---|---|---|
+| Rate | 2.50% of net profit | [Parma Taxation](https://cityofparma-oh.gov/211/Taxation) |
+| Filing URL | [cityofparma-oh.gov/211/Taxation](https://cityofparma-oh.gov/211/Taxation) | — |
+
+---
+
+## Canton (Pop. ~70,000)
+
+| Item | Detail | Source |
+|---|---|---|
+| Rate | 2.50% of net profit (increased from 2.0%, effective Jul 1, 2018) | [Canton Income Tax](https://www.cantonohio.gov/736/Income-Tax-Department) |
+| Filing URL | [cantonincometax.com](https://www.cantonincometax.com/) | — |
+
+---
+
+## Youngstown (Pop. ~60,000)
+
+| Item | Detail | Source |
+|---|---|---|
+| Rate | 2.75% of net profit | [Youngstown Income Tax](https://www.tax-rates.org/ohio/youngstown-income-tax) |
 
 ---
 
@@ -64,4 +111,9 @@ Plus approximately 600 additional municipalities. The [RITA Tax Rates Table](htt
 - [Columbus Income Tax Division](https://www.columbus.gov/Government/City-Auditor/Income-Tax-Division/General-Income-Tax-Information)
 - [Cleveland CCA Tax Rates](https://www.ccaohio.gov/tax-rates)
 - [Cincinnati Finance — Income Taxes](https://www.cincinnati-oh.gov/finance/income-taxes/)
+- [Toledo Taxation](https://toledo.oh.gov/departments/finance/taxation)
+- [Akron Income Tax](https://www.akronohio.gov/departments/finance/income_tax.php)
+- [Dayton Tax Information](https://www.daytonohio.gov/262/Tax-Information-Forms)
+- [Parma Taxation](https://cityofparma-oh.gov/211/Taxation)
+- [Canton Income Tax Department](https://www.cantonohio.gov/736/Income-Tax-Department)
 - [RITA — Tax Rates Table (600+ Ohio municipalities)](https://www.ritaohio.com/TaxRatesTable)
