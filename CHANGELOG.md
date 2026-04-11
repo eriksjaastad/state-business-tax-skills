@@ -4,6 +4,16 @@ All notable changes to tax rates, thresholds, and rules in this project.
 
 ## 2026-04-11
 
+### OH CAT — Initial Release
+
+- **Added:** Ohio Commercial Activity Tax skill with 0.26% rate on gross receipts over $6M
+- **Added:** Bright-line nexus thresholds ($500K receipts, $50K property/payroll per ORC 5751.01)
+- **Added:** Ownership aggregation rules for multi-entity owners
+- **Added:** City municipal income taxes: Columbus (2.5%), Cleveland (2.5%), Cincinnati (1.8%)
+- **Added:** Threshold history ($150K → $3M → $6M) and AMT elimination
+- **Effective:** January 1, 2025 ($6M threshold)
+- **Source:** [ORC Chapter 5751](https://codes.ohio.gov/ohio-revised-code/chapter-5751)
+
 ### OR CAT — Initial Release
 
 - **Added:** Oregon Corporate Activity Tax skill with $250 base + 0.57% rate on commercial activity over $1M
