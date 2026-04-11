@@ -1,6 +1,19 @@
+# OS
 .DS_Store
 *.swp
 *.swo
+
+# Secrets
 .env
+
+# Claude Code internals
 .claude/
+
+# Kiro specs
+.kiro/
+
+# Internal working files
 PRD.md
+PROGRESS.md
+DECISIONS.md
+_handoff/
