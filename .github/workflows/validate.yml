@@ -1,0 +1,157 @@
+name: Validate Skills
+
+on:
+  pull_request:
+    paths:
+      - 'skills/**'
+      - 'template/**'
+  schedule:
+    - cron: '0 9 * * 1'  # Weekly on Monday at 9am UTC
+  workflow_dispatch:
+
+jobs:
+  frontmatter:
+    name: Validate Frontmatter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check frontmatter in all skills
+        run: |
+          exit_code=0
+          for skill in skills/*/SKILL.md; do
+            skill_name=$(basename $(dirname "$skill"))
+
+            # Check name field
+            if ! head -10 "$skill" | grep -q '^name:'; then
+              echo "::error file=$skill::Missing 'name' in frontmatter"
+              exit_code=1
+            fi
+
+            # Check description field
+            if ! head -10 "$skill" | grep -q '^description:'; then
+              echo "::error file=$skill::Missing 'description' in frontmatter"
+              exit_code=1
+            fi
+
+            # Check last_verified field
+            if ! head -10 "$skill" | grep -q '^last_verified:'; then
+              echo "::error file=$skill::Missing 'last_verified' in frontmatter"
+              exit_code=1
+            fi
+
+            # Validate last_verified is a real date (YYYY-MM-DD)
+            verified_date=$(head -10 "$skill" | grep '^last_verified:' | sed 's/last_verified: *//')
+            if ! echo "$verified_date" | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+              echo "::error file=$skill::last_verified '$verified_date' is not a valid YYYY-MM-DD date"
+              exit_code=1
+            fi
+
+            echo "✓ $skill_name — frontmatter valid (last_verified: $verified_date)"
+          done
+          exit $exit_code
+
+  freshness:
+    name: Check Data Freshness
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Flag stale skills (last_verified > 12 months)
+        run: |
+          exit_code=0
+          cutoff=$(date -d '12 months ago' +%Y-%m-%d 2>/dev/null || date -v-12m +%Y-%m-%d)
+          for skill in skills/*/SKILL.md; do
+            skill_name=$(basename $(dirname "$skill"))
+            verified_date=$(head -10 "$skill" | grep '^last_verified:' | sed 's/last_verified: *//')
+
+            if [ -z "$verified_date" ]; then
+              echo "::warning file=$skill::No last_verified date found"
+              continue
+            fi
+
+            if [ "$verified_date" \< "$cutoff" ]; then
+              echo "::warning file=$skill::$skill_name last verified $verified_date — older than 12 months. Needs reverification."
+              exit_code=1
+            else
+              echo "✓ $skill_name — verified $verified_date (current)"
+            fi
+          done
+          if [ $exit_code -ne 0 ]; then
+            echo ""
+            echo "⚠️ One or more skills have stale data. Please reverify rates against official sources."
+          fi
+          # Freshness warnings don't fail the build — just warn
+          exit 0
+
+  links:
+    name: Check Source Links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install lychee link checker
+        run: |
+          curl -sLO https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-gnu.tar.gz
+          tar xzf lychee-x86_64-unknown-linux-gnu.tar.gz
+          chmod +x lychee
+          sudo mv lychee /usr/local/bin/
+
+      - name: Check links in skill files
+        run: |
+          lychee \
+            --accept '200,403,429' \
+            --exclude-mail \
+            --timeout 30 \
+            --retry-wait-time 5 \
+            --max-retries 2 \
+            --no-progress \
+            'skills/**/*.md' \
+            'template/**/*.md' \
+            'CONTRIBUTING.md' \
+            'README.md' || true
+          # Link check runs but doesn't fail the build — government sites
+          # sometimes block automated requests. Results are informational.
+
+  placeholders:
+    name: Check for Orphan Placeholders
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure no template placeholders in shipped skills
+        run: |
+          exit_code=0
+          for skill in skills/*/SKILL.md; do
+            skill_name=$(basename $(dirname "$skill"))
+
+            if grep -nE '\[State Name\]|\[Tax Abbreviation\]|xx-tax-name|example\.gov' "$skill"; then
+              echo "::error file=$skill::Found template placeholder text in shipped skill $skill_name"
+              exit_code=1
+            else
+              echo "✓ $skill_name — no orphan placeholders"
+            fi
+          done
+          exit $exit_code
+
+  disclaimer:
+    name: Check Disclaimers
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure disclaimer present in all skills
+        run: |
+          exit_code=0
+          disclaimer="This provides general tax guidance based on publicly available information"
+          for skill in skills/*/SKILL.md; do
+            skill_name=$(basename $(dirname "$skill"))
+
+            if ! grep -q "$disclaimer" "$skill"; then
+              echo "::error file=$skill::Missing standard disclaimer in $skill_name"
+              exit_code=1
+            else
+              echo "✓ $skill_name — disclaimer present"
+            fi
+          done
+          exit $exit_code
