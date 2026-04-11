@@ -133,6 +133,67 @@ Single flat rate across all classifications. Effective January 1, 2025.
 
 ---
 
+## Renton (Pop. ~107,000)
+
+| Classification | Rate | Source |
+|---|---|---|
+| Extracting | 0.085% | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+| Manufacturing | 0.085% | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+| Wholesaling | 0.085% | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+| Retailing | 0.050% | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+| Printing & Publishing | 0.085% | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+| Retail Service | 0.085% | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+| Service & Other Activities | 0.085% | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+
+| Item | Detail | Source |
+|---|---|---|
+| Tax threshold | $500,000 | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+| Tax cap | $4.25 million (adjusted annually by CPI) | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+| New business credit | $1,000/FTE for first 3 years (50+ FTE businesses) | [MRSC — Renton B&O Deviations](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf) |
+| Filing URL | [rentonwa.gov/City-Services/Tax-and-Licensing/Business-and-Occupation-Tax](https://www.rentonwa.gov/City-Services/Tax-and-Licensing/Business-and-Occupation-Tax) | — |
+
+---
+
+## Bellingham (Pop. ~95,000)
+
+| Classification | Rate | Source |
+|---|---|---|
+| Extracting | 0.17% | [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf) |
+| Manufacturing | 0.17% | [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf) |
+| Retailing | 0.17% | [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf) |
+| Wholesaling | 0.17% | [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf) |
+| Service & Other Activities | 0.44% | [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf) |
+
+| Item | Detail | Source |
+|---|---|---|
+| No-tax-due (quarterly) | <$5,000 taxable gross receipts | [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf) |
+| No-tax-due (annual) | <$20,000 taxable gross receipts | [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf) |
+| Filing: Annual | Due April 15 | [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf) |
+| Filing: Quarterly | Apr 30, Jul 31, Oct 31, Jan 31 | [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf) |
+| Filing URL | [cob.org/services/business/business-occupation-tax](https://cob.org/services/business/business-occupation-tax) | — |
+
+**Note:** Costs of doing business are not deductible. Filing required each period even if no tax is due.
+
+---
+
+## Tukwila (Pop. ~22,000)
+
+B&O tax effective January 1, 2024 (TMC Chapter 3.26).
+
+| Classification | Rate | Source |
+|---|---|---|
+| Retailing / Retail Services | 0.050% | [Tukwila B&O FAQ](https://www.tukwilawa.gov/wp-content/uploads/Business-and-Occupation-Tax-FAQ.pdf) |
+| All other activities | 0.085% | [Tukwila B&O FAQ](https://www.tukwilawa.gov/wp-content/uploads/Business-and-Occupation-Tax-FAQ.pdf) |
+
+| Item | Detail | Source |
+|---|---|---|
+| Filing URL | [tukwilawa.gov/departments/finance/revenue-taxes](https://www.tukwilawa.gov/departments/finance/revenue-taxes/) | — |
+| Contact | tax@tukwilawa.gov / 206-433-1835 ext. 3 | — |
+
+**Note:** Effective January 1, 2026, certain service classifications are reclassified as retail under model ordinance changes.
+
+---
+
 ## Cities Without B&O Tax
 
 The following cities in our planned list **do not impose a city B&O tax**:
@@ -140,6 +201,7 @@ The following cities in our planned list **do not impose a city B&O tax**:
 | City | Pop. | Notes | Source |
 |---|---|---|---|
 | Spokane | ~230,000 | Admissions, gambling, utility taxes only | [Spokane Business Taxes](https://my.spokanecity.org/business/doing-business/taxes/) |
+| Federal Way | ~100,000 | Utility tax only, no B&O chapter in FWRC | [Federal Way Business License](https://www.federalwaywa.gov/page/business-license) |
 | Kirkland | ~93,000 | Business license fees, utility taxes only | [Kirkland Business Licenses](https://www.kirklandwa.gov/Business/Business-Licenses-and-Fees) |
 | Redmond | ~74,000 | Admissions, gambling, utility taxes only | [Redmond Taxes & Fees](https://www.redmond.gov/992/Taxes-Fees) |
 
@@ -147,13 +209,7 @@ The following cities in our planned list **do not impose a city B&O tax**:
 
 ## Planned (Rates Not Yet Verified)
 
-The following cities have B&O taxes but rates could not be fully verified from online sources. For current rates, see the [AWC B&O Tax Rates list](https://wacities.org/news/2026/03/16/city-b-o-rates-and-licenses) or contact the city directly.
-
-- Kent (Pop. ~136,000) — has B&O; manufacturing rate 0.125% confirmed, other rates pending. [Kent City Taxes](https://www.kentwa.gov/pay-and-apply/file-city-taxes)
-- Renton (Pop. ~107,000) — has B&O; rates pending. [Renton B&O Tax](https://www.rentonwa.gov/City-Services/Tax-and-Licensing/Business-and-Occupation-Tax)
-- Federal Way (Pop. ~100,000) — B&O status pending verification
-- Bellingham (Pop. ~95,000) — has B&O; rates pending. [Bellingham B&O Tax](https://cob.org/services/business/business-occupation-tax)
-- Tukwila (Pop. ~22,000) — has B&O (effective 2024); rates pending. [Tukwila Revenue & Taxes](https://www.tukwilawa.gov/departments/finance/revenue-taxes/)
+- Kent (Pop. ~136,000) — has B&O; manufacturing rate 0.125% confirmed per Ordinance 4503, other classification rates pending. [Kent City Taxes](https://www.kentwa.gov/pay-and-apply/file-city-taxes)
 
 Plus approximately 40 additional cities. See [MRSC — City B&O Taxes](https://mrsc.org/explore-topics/business-regulation/licensing/business-and-occupation-taxes) for the full list.
 
@@ -179,3 +235,7 @@ Plus approximately 40 additional cities. See [MRSC — City B&O Taxes](https://m
 - [City of Renton — B&O Tax](https://www.rentonwa.gov/City-Services/Tax-and-Licensing/Business-and-Occupation-Tax)
 - [City of Bellingham — B&O Tax](https://cob.org/services/business/business-occupation-tax)
 - [City of Tukwila — Revenue & Taxes](https://www.tukwilawa.gov/departments/finance/revenue-taxes/)
+- [Tukwila B&O Tax FAQ (PDF)](https://www.tukwilawa.gov/wp-content/uploads/Business-and-Occupation-Tax-FAQ.pdf)
+- [MRSC — Renton B&O Deviations from Model Ordinance (PDF)](https://mrsc.org/getmedia/6c005e55-cc82-4a42-9d67-945f2ea52e2e/r43ModelOrdDifferencesBO.pdf)
+- [Bellingham B&O Tax Guide (PDF)](https://cob.org/wp-content/uploads/bo-tax-guide.pdf)
+- [Federal Way Business License](https://www.federalwaywa.gov/page/business-license)
