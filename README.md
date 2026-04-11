@@ -13,7 +13,7 @@ This project fills that gap. One skill per state, built to the [Agent Skills spe
 | State | Tax Type | Skill | Status | Last Verified |
 |-------|----------|-------|--------|---------------|
 | Washington | Business & Occupation (B&O) | [`wa-bno-tax`](skills/wa-bno-tax/) | Available | 2026-04-11 |
-| Ohio | Commercial Activity Tax (CAT) | `oh-cat` | Planned | — |
+| Ohio | Commercial Activity Tax (CAT) | [`oh-cat`](skills/oh-cat/) | Available | 2026-04-11 |
 | Texas | Franchise Tax | `tx-franchise-tax` | Planned | — |
 | Nevada | Commerce Tax | `nv-commerce-tax` | Planned | — |
 | Oregon | Corporate Activity Tax (CAT) | [`or-cat`](skills/or-cat/) | Available | 2026-04-11 |
@@ -38,9 +38,9 @@ City-level business taxes are documented within each state's skill. Cities are c
 - [ ] Olympia (Pop. ~55K) — city B&O
 
 ### Ohio
-- [ ] Columbus (Pop. ~900K)
-- [ ] Cleveland (Pop. ~370K)
-- [ ] Cincinnati (Pop. ~310K)
+- [x] Columbus (Pop. ~900K) — 2.50% municipal net profit tax
+- [x] Cleveland (Pop. ~370K) — 2.50% municipal net profit tax
+- [x] Cincinnati (Pop. ~310K) — 1.80% municipal net profit tax
 
 ### Texas
 - [ ] Houston (Pop. ~2.3M)
