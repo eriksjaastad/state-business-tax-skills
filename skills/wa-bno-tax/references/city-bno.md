@@ -90,22 +90,72 @@ Everett uses a **single flat rate** across all classifications.
 
 ---
 
-## Planned (Not Yet Documented)
+## Spokane (Pop. ~230,000)
 
-The following Washington cities also impose B&O taxes. Rates and filing details will be added in order of population. For current rates, see the [AWC B&O Tax Rates list](https://wacities.org/news/2026/03/16/city-b-o-rates-and-licenses).
+Spokane **does not impose a city B&O tax**. The city levies admissions tax, gambling tax, and utility tax, but no business & occupation tax on gross receipts.
 
-- Spokane (Pop. ~230,000)
-- Kent (Pop. ~136,000)
-- Renton (Pop. ~107,000)
-- Federal Way (Pop. ~100,000)
-- Bellingham (Pop. ~95,000)
-- Kirkland (Pop. ~93,000)
-- Redmond (Pop. ~74,000)
-- Olympia (Pop. ~55,000)
-- Burien (Pop. ~52,000)
-- Tukwila (Pop. ~22,000)
+> Source: [City of Spokane — Business Taxes](https://my.spokanecity.org/business/doing-business/taxes/)
 
-Plus approximately 40 additional cities. See [MRSC — City B&O Taxes](https://mrsc.org/explore-topics/business-regulation/licensing/business-and-occupation-taxes) for the full list and [AWC B&O Tax Rates](https://wacities.org/news/2026/03/16/city-b-o-rates-and-licenses) for current rate tables.
+---
+
+## Olympia (Pop. ~55,000)
+
+| Classification | Rate | Source |
+|---|---|---|
+| Retailing | 0.150% | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+| Retail Services | 0.150% | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+| Service & Other Activities | 0.200% | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+| Wholesaling | 0.200% | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+| Manufacturing | 0.200% | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+| Printing & Publishing | 0.200% | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+| Road Construction / Extraction | 0.200% | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+
+| Item | Detail | Source |
+|---|---|---|
+| No-tax-due threshold (2026+) | $500,000 annual gross receipts | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+| Annual filing | Due April 30 (if under $750K) | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+| Quarterly filing | If prior year >$750K; Apr 30, Jul 31, Oct 31, Jan 31 | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+| Exemptions | 501(c)(3) nonprofits, long-term real estate rentals (30+ days) | [Olympia B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php) |
+
+---
+
+## Burien (Pop. ~52,000)
+
+| Item | Detail | Source |
+|---|---|---|
+| B&O Rate (all classifications) | 0.200% | [Burien Taxes](https://www.burienwa.gov/city_hall/taxes) |
+| Exemption threshold | $200,000 annual gross receipts | [Burien Taxes](https://www.burienwa.gov/city_hall/taxes) |
+| Quarterly filing threshold | $400,000 annual gross receipts | [Burien Taxes](https://www.burienwa.gov/city_hall/taxes) |
+| Annual filing | Due April 15 (if ≤$400K) | [Burien Taxes](https://www.burienwa.gov/city_hall/taxes) |
+| Quarterly filing | Due last day of month after quarter (if >$400K) | [Burien Taxes](https://www.burienwa.gov/city_hall/taxes) |
+
+Single flat rate across all classifications. Effective January 1, 2025.
+
+---
+
+## Cities Without B&O Tax
+
+The following cities in our planned list **do not impose a city B&O tax**:
+
+| City | Pop. | Notes | Source |
+|---|---|---|---|
+| Spokane | ~230,000 | Admissions, gambling, utility taxes only | [Spokane Business Taxes](https://my.spokanecity.org/business/doing-business/taxes/) |
+| Kirkland | ~93,000 | Business license fees, utility taxes only | [Kirkland Business Licenses](https://www.kirklandwa.gov/Business/Business-Licenses-and-Fees) |
+| Redmond | ~74,000 | Admissions, gambling, utility taxes only | [Redmond Taxes & Fees](https://www.redmond.gov/992/Taxes-Fees) |
+
+---
+
+## Planned (Rates Not Yet Verified)
+
+The following cities have B&O taxes but rates could not be fully verified from online sources. For current rates, see the [AWC B&O Tax Rates list](https://wacities.org/news/2026/03/16/city-b-o-rates-and-licenses) or contact the city directly.
+
+- Kent (Pop. ~136,000) — has B&O; manufacturing rate 0.125% confirmed, other rates pending. [Kent City Taxes](https://www.kentwa.gov/pay-and-apply/file-city-taxes)
+- Renton (Pop. ~107,000) — has B&O; rates pending. [Renton B&O Tax](https://www.rentonwa.gov/City-Services/Tax-and-Licensing/Business-and-Occupation-Tax)
+- Federal Way (Pop. ~100,000) — B&O status pending verification
+- Bellingham (Pop. ~95,000) — has B&O; rates pending. [Bellingham B&O Tax](https://cob.org/services/business/business-occupation-tax)
+- Tukwila (Pop. ~22,000) — has B&O (effective 2024); rates pending. [Tukwila Revenue & Taxes](https://www.tukwilawa.gov/departments/finance/revenue-taxes/)
+
+Plus approximately 40 additional cities. See [MRSC — City B&O Taxes](https://mrsc.org/explore-topics/business-regulation/licensing/business-and-occupation-taxes) for the full list.
 
 ---
 
@@ -120,3 +170,12 @@ Plus approximately 40 additional cities. See [MRSC — City B&O Taxes](https://m
 - [MRSC — City B&O Taxes](https://mrsc.org/explore-topics/business-regulation/licensing/business-and-occupation-taxes)
 - [AWC — City B&O Tax Rates](https://wacities.org/news/2026/03/16/city-b-o-rates-and-licenses)
 - [Moss Adams — Seattle B&O Tax Changes for 2026](https://www.mossadams.com/articles/2025/11/seattle-business-and-occupation-tax-changes)
+- [City of Spokane — Business Taxes](https://my.spokanecity.org/business/doing-business/taxes/)
+- [City of Olympia — B&O Tax](https://www.olympiawa.gov/business/business___occupation_(b_o)_taxes.php)
+- [City of Burien — Taxes](https://www.burienwa.gov/city_hall/taxes)
+- [City of Redmond — Taxes & Fees](https://www.redmond.gov/992/Taxes-Fees)
+- [City of Kirkland — Business Licenses](https://www.kirklandwa.gov/Business/Business-Licenses-and-Fees)
+- [City of Kent — City Taxes](https://www.kentwa.gov/pay-and-apply/file-city-taxes)
+- [City of Renton — B&O Tax](https://www.rentonwa.gov/City-Services/Tax-and-Licensing/Business-and-Occupation-Tax)
+- [City of Bellingham — B&O Tax](https://cob.org/services/business/business-occupation-tax)
+- [City of Tukwila — Revenue & Taxes](https://www.tukwilawa.gov/departments/finance/revenue-taxes/)
