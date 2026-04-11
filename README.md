@@ -14,11 +14,11 @@ This project fills that gap. One skill per state, built to the [Agent Skills spe
 |-------|----------|-------|--------|---------------|
 | Washington | Business & Occupation (B&O) | [`wa-bno-tax`](skills/wa-bno-tax/) | Available | 2026-04-11 |
 | Ohio | Commercial Activity Tax (CAT) | [`oh-cat`](skills/oh-cat/) | Available | 2026-04-11 |
-| Texas | Franchise Tax | `tx-franchise-tax` | Planned | — |
-| Nevada | Commerce Tax | `nv-commerce-tax` | Planned | — |
+| Texas | Franchise Tax (Margin) | [`tx-franchise-tax`](skills/tx-franchise-tax/) | Available | 2026-04-11 |
+| Nevada | Commerce Tax | [`nv-commerce-tax`](skills/nv-commerce-tax/) | Available | 2026-04-11 |
 | Oregon | Corporate Activity Tax (CAT) | [`or-cat`](skills/or-cat/) | Available | 2026-04-11 |
-| Delaware | Gross Receipts Tax | `de-grt` | Planned | — |
-| Tennessee | Gross Receipts Tax | `tn-grt` | Planned | — |
+| Delaware | Gross Receipts Tax | [`de-grt`](skills/de-grt/) | Available | 2026-04-11 |
+| Tennessee | Business Tax (Gross Receipts) | [`tn-business-tax`](skills/tn-business-tax/) | Available | 2026-04-11 |
 
 ## Planned City Coverage
 
@@ -43,14 +43,14 @@ City-level business taxes are documented within each state's skill. Cities are c
 - [x] Cincinnati (Pop. ~310K) — 1.80% municipal net profit tax
 
 ### Texas
-- [ ] Houston (Pop. ~2.3M)
-- [ ] San Antonio (Pop. ~1.5M)
-- [ ] Dallas (Pop. ~1.3M)
+- [x] Houston (Pop. ~2.3M) — no city franchise tax
+- [x] San Antonio (Pop. ~1.5M) — no city franchise tax
+- [x] Dallas (Pop. ~1.3M) — no city franchise tax
 
 ### Nevada
-- [ ] Las Vegas (Pop. ~650K)
-- [ ] Henderson (Pop. ~320K)
-- [ ] Reno (Pop. ~270K)
+- [x] Las Vegas (Pop. ~650K) — no city commerce tax
+- [x] Henderson (Pop. ~320K) — no city commerce tax
+- [x] Reno (Pop. ~270K) — no city commerce tax
 
 ### Oregon
 - [x] Portland (Pop. ~640K) — city BLT + Multnomah MCBIT + Metro SHS (net income taxes)
@@ -58,13 +58,13 @@ City-level business taxes are documented within each state's skill. Cities are c
 - [x] Eugene (Pop. ~175K) — no city business tax
 
 ### Delaware
-- [ ] Wilmington (Pop. ~70K)
-- [ ] Dover (Pop. ~40K)
+- [x] Wilmington (Pop. ~70K) — city wage tax only (1.25%), no GRT
+- [x] Dover (Pop. ~40K) — no city business tax
 
 ### Tennessee
-- [ ] Nashville (Pop. ~690K)
-- [ ] Memphis (Pop. ~630K)
-- [ ] Knoxville (Pop. ~190K)
+- [x] Nashville (Pop. ~690K) — state + city business tax via TN DOR
+- [x] Memphis (Pop. ~630K) — state + city business tax via TN DOR
+- [x] Knoxville (Pop. ~190K) — state + city business tax via TN DOR
 
 ## Installation
 
