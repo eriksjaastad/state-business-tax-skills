@@ -4,7 +4,7 @@ Last updated: 2026-04-11
 
 Washington has **54 cities** with local B&O taxes, all operating under the [City B&O Tax Model Ordinance](https://wacities.org/news/2026/03/16/city-b-o-rates-and-licenses) adopted per 2003 legislation. City B&O is filed and paid **separately** from state B&O — each city has its own return, rates, and thresholds.
 
-Cities are listed by population (largest first). Only cities with verified rate data are fully documented below; remaining cities are listed in the Planned section.
+Cities are grouped by coverage status. Cities with verified rate data are fully documented below; cities confirmed not to impose city B&O are listed separately.
 
 ---
 
@@ -196,7 +196,7 @@ B&O tax effective January 1, 2024 (TMC Chapter 3.26).
 
 ## Cities Without B&O Tax
 
-The following cities in our planned list **do not impose a city B&O tax**:
+The following reviewed cities **do not impose a city B&O tax**:
 
 | City | Pop. | Notes | Source |
 |---|---|---|---|

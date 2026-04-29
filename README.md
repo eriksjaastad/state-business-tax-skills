@@ -26,8 +26,8 @@ City-level business taxes are documented within each state's skill. Cities are c
 
 ### Washington
 - [x] Seattle (Pop. ~750K) — city B&O
-- [x] Tacoma (Pop. ~220K) — city B&O
 - [x] Spokane (Pop. ~230K) — no city B&O tax
+- [x] Tacoma (Pop. ~220K) — city B&O
 - [x] Bellevue (Pop. ~150K) — city B&O
 - [x] Kent (Pop. ~136K) — city B&O (7 classifications, retailing 0.1%, service 0.2%, mfg 0.125%)
 - [x] Everett (Pop. ~112K) — city B&O
@@ -120,7 +120,7 @@ If you find an outdated rate or threshold, please open an issue or PR. See the [
 
 ## Contributing
 
-We welcome contributions for any of the planned states — or states we haven't listed yet.
+We welcome contributions for new states, additional city overlays, and verified rate updates.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for step-by-step instructions on adding a new state, updating an existing skill, or adding city overlays. Every PR that changes tax data must complete the verification checklist before merge.
 
@@ -134,8 +134,8 @@ state-business-tax-skills/
       references/
         rate-tables-2025-2026.md        # Detailed rate tables with sources
         city-bno.md                     # City overlay rates and filing info
-    oh-cat/                             # (planned)
-    tx-franchise-tax/                   # (planned)
+    oh-cat/
+    tx-franchise-tax/
     ...
   template/
     SKILL.md                            # Starter template for new states

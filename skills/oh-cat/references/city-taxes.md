@@ -44,14 +44,6 @@ Cities are listed by population (largest first).
 
 ---
 
-## Planned (Not Yet Documented)
-
-The following Ohio cities also impose municipal income taxes. For current rates, see [RITA Tax Rates Table](https://www.ritaohio.com/TaxRatesTable).
-
-Plus approximately 600 additional municipalities. The [RITA Tax Rates Table](https://www.ritaohio.com/TaxRatesTable) provides a comprehensive list.
-
----
-
 ## Toledo (Pop. ~270,000)
 
 | Item | Detail | Source |
@@ -102,7 +94,13 @@ Plus approximately 600 additional municipalities. The [RITA Tax Rates Table](htt
 
 | Item | Detail | Source |
 |---|---|---|
-| Rate | 2.75% of net profit | [Youngstown Income Tax](https://www.tax-rates.org/ohio/youngstown-income-tax) |
+| Rate | 2.75% of net profit | [Youngstown Code Ch. 183.01](https://codelibrary.amlegal.com/codes/youngstown/latest/youngstown_oh/0-0-0-36576) |
+
+---
+
+## Additional Municipalities
+
+Ohio has approximately 600 additional municipalities with income taxes. For current rates, see the [RITA Tax Rates Table](https://www.ritaohio.com/TaxRatesTable) and verify against the municipality or tax administrator before calculating city liability.
 
 ---
 
@@ -116,4 +114,5 @@ Plus approximately 600 additional municipalities. The [RITA Tax Rates Table](htt
 - [Dayton Tax Information](https://www.daytonohio.gov/262/Tax-Information-Forms)
 - [Parma Taxation](https://cityofparma-oh.gov/211/Taxation)
 - [Canton Income Tax Department](https://www.cantonohio.gov/736/Income-Tax-Department)
+- [Youngstown Code Ch. 183.01](https://codelibrary.amlegal.com/codes/youngstown/latest/youngstown_oh/0-0-0-36576)
 - [RITA — Tax Rates Table (600+ Ohio municipalities)](https://www.ritaohio.com/TaxRatesTable)
