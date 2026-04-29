@@ -88,30 +88,22 @@ jobs:
     name: Check Source Links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Install lychee link checker
-        run: |
-          curl -sLO https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-gnu.tar.gz
-          tar xzf lychee-x86_64-unknown-linux-gnu.tar.gz
-          chmod +x lychee
-          sudo mv lychee /usr/local/bin/
+      - uses: actions/checkout@v5
 
       - name: Check links in skill files
-        run: |
-          lychee \
-            --accept '200,403,429' \
-            --exclude-mail \
-            --timeout 30 \
-            --retry-wait-time 5 \
-            --max-retries 2 \
-            --no-progress \
-            'skills/**/*.md' \
-            'template/**/*.md' \
-            'CONTRIBUTING.md' \
-            'README.md' || true
-          # Link check runs but doesn't fail the build — government sites
-          # sometimes block automated requests. Results are informational.
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          args: >-
+            --accept 200,403,429
+            --timeout 30
+            --retry-wait-time 5
+            --max-retries 2
+            --no-progress
+            'skills/**/*.md'
+            'template/**/*.md'
+            'CONTRIBUTING.md'
+            'README.md'
 
   placeholders:
     name: Check for Orphan Placeholders
