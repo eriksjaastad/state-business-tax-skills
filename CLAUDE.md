@@ -70,7 +70,7 @@ Every skill must include: *"This provides general tax guidance based on publicly
 5. Test by installing locally and running realistic queries against Claude
 
 ### Commit Messages
-Follow conventional commits. Include the state code and any legislation references:
+Project-specific convention: scope by state code and cite any legislation references:
 ```
 feat(wa-bno): add 2027 manufacturing rate increase per HB 2081
 fix(wa-bno): correct quarterly phase-out upper bound ($56K, not $55K)
