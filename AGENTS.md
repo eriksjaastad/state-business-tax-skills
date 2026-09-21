@@ -28,6 +28,12 @@ template/
 
 Skills follow the [Agent Skills specification](https://agentskills.io/specification). Each skill is self-contained — the SKILL.md references sibling files for detailed rate tables and sources. Claude reads these at invocation time.
 
+## Repository Review Guidance
+
+Treat `template/`, including `template/SKILL.md` and `template/references/`, as
+Tier 1 propagation sources. Contributors copy this starter for each new state,
+so review template changes before individual state-skill content.
+
 ## Quality Standards
 
 This project has higher standards than a typical repo. Every change must meet all of these:
