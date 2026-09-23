@@ -12,9 +12,9 @@ Append-only log of `pt migration` sessions. Each section records the paths touch
 - action: `manifest-only`
 
 ### New paths (introduced during session)
-- `[dirty]` `.github/workflows/pr-label-check.yml`
+- _(none)_
 
 ### Modified paths (status changed during session)
-- _(none)_
+- `[deleted]` `.github/workflows/pr-label-check.yml`
 
 ---
