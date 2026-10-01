@@ -18,3 +18,19 @@ Append-only log of `pt migration` sessions. Each section records the paths touch
 - `[deleted]` `.github/workflows/pr-label-check.yml`
 
 ---
+## 7602-drop-hygiene-block-state-business-tax-skills — 2026-10-01T01:56:55Z
+
+- started_at:  `2026-10-01T01:56:54Z`
+- finished_at: `2026-10-01T01:56:55Z`
+- baseline_head: `601d468e115346c6b45b5dfabb09e3cbfcd926c7`
+- action: `committed`
+
+### New paths (introduced during session)
+- `[dirty]` `AGENTS.md`
+- `[dirty]` `CLAUDE.md`
+
+### Modified paths (status changed during session)
+- _(none)_
+
+---
+
