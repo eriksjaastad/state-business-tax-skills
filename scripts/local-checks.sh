@@ -1,17 +1,26 @@
 #!/usr/bin/env bash
 # Local checks for state-business-tax-skills (#7828): the frontmatter,
 # placeholder, disclaimer and freshness jobs of .github/workflows/validate.yml.
-# The shared pre-push runs this with LOCAL_CHECKS_SHA/LOCAL_CHECKS_BASE set
-# (claude-user-config hooks/git-local-checks.py); run it by hand from the repo
-# root to check everything. Freshness only warns, as it did on GitHub.
+# Freshness only warns, as it did on GitHub; the weekly link check is not a push
+# check.
+#
+# The shared pre-push (claude-user-config hooks/git-local-checks.py) runs this
+# in a fresh worktree of the pushed commit, with LOCAL_CHECKS_SHA and
+# LOCAL_CHECKS_BASE set, and bounds the whole run (LOCAL_CHECKS_TIMEOUT,
+# default 30 minutes), so the files read here are the commit's. Run it by hand
+# from a checkout to check that checkout's files; with no base it always runs.
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 
-sha="${LOCAL_CHECKS_SHA:-HEAD}"
+sha="$(git rev-parse HEAD)"
+if [ -n "${LOCAL_CHECKS_SHA:-}" ] && [ "$sha" != "$(git rev-parse "$LOCAL_CHECKS_SHA^{commit}")" ]; then
+    echo "local checks: this checkout is at $sha, not the pushed $LOCAL_CHECKS_SHA" >&2
+    exit 2
+fi
 
 # True when any given path changed since LOCAL_CHECKS_BASE; always true without
 # one. If the diff itself fails, say so and treat every path as changed, so a
-# broken diff runs the gated suites instead of silently skipping them.
+# broken diff runs the gated checks instead of silently skipping them.
 changed() {
     [ -z "${LOCAL_CHECKS_BASE:-}" ] && return 0
     local paths
@@ -22,7 +31,7 @@ changed() {
     [ -n "$paths" ]
 }
 
-if ! changed skills/ template/; then
+if ! changed skills/ template/ .github/workflows/validate.yml; then
     echo "local checks: no skills/ or template/ changes; nothing to check"
     exit 0
 fi
