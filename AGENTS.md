@@ -11,7 +11,7 @@ This is a **public good project** — it should be treated with the same rigor a
 
 ## Architecture
 
-Pure markdown. No code, no dependencies, no build step.
+Skill content is Markdown, with no application code, runtime dependencies, or build step. Repository tooling validates that content: `.github/workflows/validate.yml` defines validation jobs, and `scripts/local-checks.sh` runs the offline content checks locally.
 
 ```
 skills/
@@ -88,7 +88,7 @@ docs: add Ohio CAT skill with 2026 rates
 
 ## What Not to Do
 
-- **Don't add code.** This is a pure markdown project. No scripts, no YAML configs, no build tools.
+- **Keep skills as Markdown content.** Don't add application code or runtime dependencies to skills. Repository validation scripts and workflow YAML that check the Markdown content are allowed.
 - **Don't cover federal taxes.** State business taxes only. Federal is a separate concern.
 - **Don't give legal advice.** Frame everything as "guidance with source citations," never as "you should" or "you must" (when addressing the end user about their tax obligations).
 - **Don't include historical rates** unless they're needed for context on a recent change. Current rates only.
